@@ -4,5 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def index(request):
-    return HttpResponse("Hello, Rio!")
+def portfolio(request):
+    return HttpResponse("This page will be a nice gallery of my work, soon.")
