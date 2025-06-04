@@ -5,4 +5,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, Rio!")
+
+    if request.method == "POST":
+        return HttpResponse("This was a POST request.")
+    else:
+        return HttpResponse("request.method")
